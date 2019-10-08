@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXProgressBar?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnQuiz" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestQuizController">
+   <children>
+      <JFXProgressBar id="testProgressbar" fx:id="prbProgress" prefHeight="10.0" prefWidth="776.0" progress="0.0" />
+      <Text fx:id="txtQuestion" fill="WHITE" layoutX="87.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="questionText" text="What is sforzando?">
+         <font>
+            <Font name="Century Gothic" size="23.0" />
+         </font>
+      </Text>
+      <JFXButton id="okButton" fx:id="btnOk" layoutX="607.0" layoutY="76.0" onAction="#nextQuestion" prefHeight="41.0" prefWidth="101.0" style="-fx-background-color: white; -fx-background-radius: 20;" text="OK" textFill="#001421" visible="false">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+         <graphic>
+            <MaterialDesignIconView id="checkIcon" fx:id="icnCheck" fill="#001421" glyphName="CHECK" size="30" />
+         </graphic>
+      </JFXButton>
+      <JFXButton fx:id="btnOne" layoutX="177.0" layoutY="158.0" onAction="#giveAnswer" prefHeight="170.0" prefWidth="180.0" ripplerFill="#093957" styleClass="selectButton" text="Playful" textAlignment="CENTER" textFill="#c18303" wrapText="true">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnTwo" layoutX="419.0" layoutY="158.0" onAction="#giveAnswer" prefHeight="170.0" prefWidth="180.0" ripplerFill="#093957" styleClass="selectButton" text="Furious" textAlignment="CENTER" textFill="#c18303" wrapText="true">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnThree" layoutX="177.0" layoutY="381.0" onAction="#giveAnswer" prefHeight="170.0" prefWidth="180.0" ripplerFill="#093957" styleClass="selectButton" text="Suddenly Loud" textAlignment="CENTER" textFill="#c18303" wrapText="true">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFour" layoutX="419.0" layoutY="381.0" onAction="#giveAnswer" prefHeight="170.0" prefWidth="180.0" ripplerFill="#093957" styleClass="selectButton" text="Faster" textAlignment="CENTER" textFill="#c18303" wrapText="true">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

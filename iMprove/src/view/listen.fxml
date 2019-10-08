@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnListen" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListenController">
+   <children>
+      <Text fx:id="txtWelcome" fill="WHITE" layoutX="269.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Welcome.">
+         <font>
+            <Font name="Century Gothic" size="48.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtSubtitle" fill="WHITE" layoutX="261.0" layoutY="330.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="remember to not mute your sound!">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Text>
+      <JFXButton fx:id="btnPlay" layoutX="353.0" layoutY="430.0" onAction="#playQuiz" prefHeight="33.0" prefWidth="70.0" styleClass="specialButton1" text="Play" textFill="#fcfcfc">
+         <font>
+            <Font name="Century Gothic" size="18.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

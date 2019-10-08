@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnUpdateSet" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onKeyPressed="#kFinish" prefHeight="663.0" prefWidth="776.0" styleClass="backgroundPane2" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearnUpdateController">
+   <children>
+      <Text fx:id="txtNewTitle" fill="#c18303" layoutX="40.0" layoutY="80.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText3" text="Title Is Here" textAlignment="CENTER" wrappingWidth="666.6880035400391">
+         <font>
+            <Font name="Sweetly Broken" size="72.0" />
+         </font>
+      </Text>
+      <JFXButton id="addButton" fx:id="btnAdd" layoutX="500.0" layoutY="114.0" onAction="#addFlashcard" text="Add New Flashcard" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="11.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnFinish" layoutX="629.0" layoutY="111.0" onAction="#finish" styleClass="specialButton1" text="Finish" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="14.0" />
+         </font>
+      </JFXButton>
+      <ScrollPane fx:id="scrpnCards" hbarPolicy="NEVER" layoutX="41.0" layoutY="151.0" maxHeight="482.0" prefHeight="465.0" prefWidth="667.0">
+         <content>
+            <VBox fx:id="vbxCards" prefHeight="47.0" prefWidth="678.0" />
+         </content>
+      </ScrollPane>
+   </children>
+</AnchorPane>

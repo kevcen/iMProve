@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="apnCardRow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="669.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearnUpdateRowController">
+   <children>
+      <JFXButton fx:id="btnRemove" layoutX="11.0" layoutY="11.0" onAction="#removeCard" style="-fx-background-color: #6f0f0f;" styleClass="deleteButton" text="-" textFill="WHITE" />
+      <TextField fx:id="fldTerm" layoutX="64.0" layoutY="12.0" onAction="#finish" prefHeight="22.0" prefWidth="260.0" promptText="Foreign Term" styleClass="learnField" />
+      <TextField fx:id="fldDef" layoutX="388.0" layoutY="12.0" onAction="#finish" prefHeight="22.0" prefWidth="260.0" promptText="Definition" styleClass="learnField" />
+   </children>
+</AnchorPane>

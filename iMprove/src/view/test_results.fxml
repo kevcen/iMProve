@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnResults" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane2" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.TestResultsController">
+   <children>
+      <Text fx:id="txtScore" fill="#c18303" layoutX="95.0" layoutY="123.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText3" text="You scored 8/10!">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <Text fx:id="txtComment" fill="#001421" layoutX="95.0" layoutY="150.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText2" text="Not half bad!">
+         <font>
+            <Font name="Century Gothic" size="15.0" />
+         </font>
+      </Text>
+      <ScrollPane fx:id="scrpnFeedbacks" layoutX="95.0" layoutY="196.0" prefHeight="336.0" prefWidth="586.0">
+         <content>
+            <VBox fx:id="vbxFeedbacks" prefHeight="10.0" prefWidth="584.0" style="-fx-background-color: transparent;">
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets></VBox>
+         </content>
+      </ScrollPane>
+      <JFXButton fx:id="btnAgain" layoutX="642.0" layoutY="579.0" onAction="#playAgain" prefHeight="39.0" prefWidth="120.0" styleClass="specialButton1" text="Play Again" textFill="WHITE">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+   </children>
+</AnchorPane>

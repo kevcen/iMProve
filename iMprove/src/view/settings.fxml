@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import com.jfoenix.controls.JFXSpinner?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXToggleButton?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnSettings" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.SettingsController">
+   <children>
+      <Text fill="WHITE" layoutX="40.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Settings">
+         <font>
+            <Font name="Century Gothic" size="28.0" />
+         </font>
+      </Text>
+      <Line id="titleLine" endX="595.0" fill="#c18303" layoutX="140.0" layoutY="71.0" startX="-100.0" stroke="#c18303" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="OUTSIDE" strokeWidth="0.5" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="155.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Theme">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="176.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="Change the colour scheme">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Name">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="377.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Greeting">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="Change your name">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="397.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="Enables custom greeting on welcome screen.">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cbxTheme" focusColor="WHITE" layoutX="481.0" layoutY="143.0" onAction="#changeTheme" prefHeight="34.0" prefWidth="235.0" style="-fx-prompt-text-fill: #b5b5b5; -fx-text-fill: #c18303;" styleClass="settingsCbox" unFocusColor="#b5b5b5" visibleRowCount="3" />
+      <JFXTextField id="nameField" fx:id="fldName" focusColor="#c18303" layoutX="481.0" layoutY="221.0" prefHeight="31.0" prefWidth="235.0" unFocusColor="#b5b5b5" />
+      <Text fill="WHITE" layoutX="60.0" layoutY="446.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Reset">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="468.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="Deletes all the data and progress you have made so far.">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <JFXToggleButton id="selectToggle" fx:id="tglGreeting" layoutX="652.0" layoutY="348.0" onAction="#changeGreeting" prefHeight="60.0" prefWidth="49.0" selected="true" size="12.0" text=" " toggleColor="#ab6f00" toggleLineColor="#c99834" unToggleColor="WHITE" unToggleLineColor="#b5b5b5" />
+      <JFXButton fx:id="btnReset" layoutX="481.0" layoutY="438.0" onAction="#resetData" prefHeight="34.0" prefWidth="235.0" style="-fx-background-color: #f3f3f3;" styleClass="selectButton" text="OK" textFill="#c18303">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+      <Text fill="WHITE" layoutX="60.0" layoutY="304.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Grade">
+         <font>
+            <Font name="Century Gothic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="60.0" layoutY="325.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="Change your grade for this session">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </Text>
+      <JFXComboBox fx:id="cbxGrade" focusColor="WHITE" layoutX="481.0" layoutY="296.0" onAction="#changeGrade" prefHeight="25.0" prefWidth="235.0" style="-fx-text-fill: #c18303;" styleClass="settingsCbox" unFocusColor="#b5b5b5" visibleRowCount="8" />
+      <JFXSpinner layoutX="693.0" layoutY="19.0" onMouseClicked="#pandaTheme" prefHeight="42.0" prefWidth="40.0" />
+   </children>
+</AnchorPane>

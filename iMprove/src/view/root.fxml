@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="918.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.RootController">
+   <children>
+      <AnchorPane id="navigationBar" fx:id="apnNavigate" layoutY="11.0" prefHeight="611.0" prefWidth="128.0">
+         <children>
+            <Text id="timeText" fx:id="txtTime" fill="WHITE" layoutX="9.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText1" text="11:52 AM" wrappingWidth="113.00001150369644">
+               <font>
+                  <Font name="Lucida Console" size="11.0" />
+               </font>
+            </Text>
+            <Text fx:id="txtExit" fill="WHITE" layoutX="10.0" layoutY="602.0" onMouseClicked="#close" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Exit" underline="true">
+               <font>
+                  <Font name="Lucida Console" size="11.0" />
+               </font>
+            </Text>
+            <Label id="nameLabel" fx:id="lblName" layoutX="9.0" layoutY="8.0" prefHeight="18.0" prefWidth="113.0" text="Rebecca May" textFill="WHITE">
+               <font>
+                  <Font name="Century Gothic" size="14.0" />
+               </font>
+            </Label>
+            <FontAwesomeIconView id="settingsIcon" fill="#bfbfbf" glyphName="GEAR" layoutX="109.0" layoutY="604.0" onMouseClicked="#goSettings" size="16" />
+            <VBox fx:id="vbxActivities" layoutX="3.0" layoutY="59.0" prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <StackPane fx:id="spnLearn" prefHeight="133.0" prefWidth="128.0" styleClass="activityPane">
+                     <children>
+                        <MaterialDesignIconView fx:id="icnLearn" fill="#bf810421" glyphName="ARRANGE_BRING_FORWARD" size="120" styleClass="activityIcon" wrappingWidth="113.0" />
+                        <JFXButton fx:id="btnLearn" onAction="#goLearn" prefHeight="133.0" prefWidth="118.0" styleClass="activityButton" text="Learn" textFill="#c18303">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets />
+                     </VBox.margin>
+                  </StackPane>
+                  <StackPane fx:id="spnTest" prefHeight="133.0" prefWidth="128.0" styleClass="activityPane">
+                     <children>
+                        <MaterialDesignIconView fx:id="icnTest" fill="#bf810420" glyphName="FORMAT_LIST_NUMBERS" size="120" styleClass="activityIcon" wrappingWidth="113.0" />
+                        <JFXButton fx:id="btnTest" onAction="#goTest" prefHeight="133.0" prefWidth="118.0" styleClass="activityButton" text="Test" textFill="#c18303">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <StackPane fx:id="spnListen" prefHeight="133.0" prefWidth="128.0" styleClass="activityPane">
+                     <children>
+                        <MaterialDesignIconView fx:id="icnListen" fill="#bd800621" glyphName="HEADPHONES" size="120" styleClass="activityIcon" />
+                        <JFXButton fx:id="btnListen" onAction="#goListen" prefHeight="133.0" prefWidth="118.0" styleClass="activityButton" text="Listen" textFill="#c18303">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </StackPane>
+                  <StackPane fx:id="spnReview" prefHeight="133.0" prefWidth="128.0" styleClass="activityPane">
+                     <children>
+                        <MaterialDesignIconView fx:id="icnReview" fill="#bf810421" glyphName="CHART_LINE" size="120" styleClass="activityIcon" wrappingWidth="113.0" />
+                        <JFXButton fx:id="btnReview" onAction="#goReview" prefHeight="133.0" prefWidth="118.0" styleClass="activityButton" text="Review" textFill="#c18303">
+                           <font>
+                              <Font name="Century Gothic" size="18.0" />
+                           </font>
+                        </JFXButton>
+                     </children>
+                     <VBox.margin>
+                        <Insets top="15.0" />
+                     </VBox.margin>
+                  </StackPane>
+               </children>
+            </VBox>
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="apnActivity" layoutX="142.0" layoutY="-1.0" prefHeight="632.0" prefWidth="776.0" style="-fx-background-radius: 10; -fx-background-color: white;">
+         <children>
+            <AnchorPane fx:id="apnWelcome" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane2">
+               <children>
+                  <Text fx:id="txtSubtitle" layoutX="234.0" layoutY="338.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="subtitleText2" text="Please select an activity from the left.">
+                     <font>
+                        <Font name="Century Gothic" size="17.0" />
+                     </font>
+                  </Text>
+                  <Text fx:id="txtWelcome" fill="#001421" layoutX="-1.0" layoutY="306.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText2" text="Welcome to iMProve." textAlignment="CENTER" wrappingWidth="776.0000014305115">
+                     <font>
+                        <Font name="Century Gothic" size="39.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+         </children></AnchorPane>
+   </children>
+</AnchorPane>

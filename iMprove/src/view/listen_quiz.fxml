@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXSlider?>
+<?import de.jensd.fx.glyphs.materialdesignicons.MaterialDesignIconView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="apnQuiz" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.ListenQuizController">
+   <children>
+      <Text fx:id="txtQuestion" fill="WHITE" layoutX="45.0" layoutY="75.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="questionText" text="What is the modulation?" wrappingWidth="284.55078125">
+         <font>
+            <Font name="Century Gothic" size="22.0" />
+         </font>
+      </Text>
+      <MaterialDesignIconView fx:id="icnPlayPause" fill="#c18303" glyphName="PAUSE" layoutX="363.0" layoutY="135.0" onMouseClicked="#playPause" size="50" styleClass="playIcon" visible="false" />
+      <JFXSlider id="musicSlider" fx:id="sldSeek" layoutX="99.0" layoutY="154.0" prefHeight="14.0" prefWidth="578.0" value="0.01" />
+      <JFXButton fx:id="btnRelMaj" layoutX="210.0" layoutY="220.0" onAction="#answerQuestion" prefHeight="145.0" prefWidth="150.0" styleClass="selectButton" text="Relative Major" textFill="#c18303">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnRelMin" layoutX="417.0" layoutY="220.0" onAction="#answerQuestion" prefHeight="145.0" prefWidth="150.0" styleClass="selectButton" text="Relative Minor" textFill="#c18303">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnSub" layoutX="210.0" layoutY="400.0" onAction="#answerQuestion" prefHeight="145.0" prefWidth="150.0" styleClass="selectButton" text="Subdominant" textFill="#c18303">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnDom" layoutX="417.0" layoutY="400.0" onAction="#answerQuestion" prefHeight="145.0" prefWidth="150.0" styleClass="selectButton" text="Dominant" textFill="#c18303">
+         <font>
+            <Font name="Century Gothic" size="17.0" />
+         </font>
+      </JFXButton>
+      <JFXButton fx:id="btnAgain" layoutX="660.0" layoutY="579.0" onAction="#playAgain" prefHeight="39.0" prefWidth="99.0" styleClass="specialButton1" text="Play Again" textFill="WHITE" visible="false">
+         <font>
+            <Font name="Century Gothic" size="13.0" />
+         </font>
+      </JFXButton>
+      <AnchorPane fx:id="apnFirstPlay" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1">
+         <children>
+            <JFXButton id="playButton" layoutX="231.0" layoutY="162.0" onAction="#firstPlay" text=" ">
+               <graphic>
+                  <MaterialDesignIconView fill="#c18303" glyphName="PLAY" size="300" styleClass="playIcon" />
+               </graphic>
+            </JFXButton>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

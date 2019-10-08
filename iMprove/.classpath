@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="src" path="src"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/commons-lang-2.6.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/commons-logging-1.1.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/fontawesomefx-8.9.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/hsqldb.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/jackcess-2.1.11.jar"/>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/ucanaccess-4.0.4.jar"/>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER">
+		<attributes>
+			<attribute name="module" value="true"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry kind="lib" path="C:/Users/kev98/Documents/external jars/jfoenix-8.0.4.jar"/>
+	<classpathentry kind="output" path="bin"/>
+</classpath>
