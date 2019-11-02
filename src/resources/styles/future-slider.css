@@ -1,0 +1,20 @@
+#musicSlider .track {
+    -fx-background-color: #ffffff;
+}
+
+#musicSlider .thumb {
+    -fx-background-color: #5bc6b4;
+    visibility: hidden;
+}
+
+#musicSlider .colored-track {
+    -fx-background-color: #5bc6b4;
+}
+
+#musicSlider .animated-thumb {
+    -fx-background-color: #1f3a3d;
+}
+
+#musicSlider .slider-value {
+    -fx-stroke: #5bc6b4;
+}
