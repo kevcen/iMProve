@@ -5,15 +5,21 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="apnSetRow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="50.0" prefWidth="649.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearnRowController">
-   <children>
-      <Text fx:id="txtTitle" fill="#001421" layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText2" text="Title Title Title Title" wrappingWidth="488.078125">
-         <font>
-            <Font name="Century Gothic" size="25.0" />
-         </font>
-      </Text>
-      <MaterialDesignIconView fx:id="icnPlay" fill="#c18303" glyphName="PLAY" layoutX="521.0" layoutY="41.0" onMouseClicked="#playFlashcards" size="45" styleClass="playIcon" />
-      <MaterialDesignIconView id="editIcon" fx:id="icnEdit" fill="#001421" glyphName="PENCIL" layoutX="576.0" layoutY="34.0" onMouseClicked="#editSet" size="25" />
-      <MaterialDesignIconView id="deleteIcon" fx:id="icnDelete" fill="#6f0f0f" glyphName="EXCLAMATION" layoutX="605.0" layoutY="36.0" onMouseClicked="#deleteSet" size="30" />
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apnSetRow" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="50.0" prefWidth="649.0"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.LearnRowController">
+    <children>
+        <Text fx:id="txtTitle" fill="#001421" layoutX="14.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="titleText2" text="Title Title Title Title" wrappingWidth="488.078125">
+            <font>
+                <Font name="Century Gothic" size="25.0"/>
+            </font>
+        </Text>
+        <MaterialDesignIconView fx:id="icnPlay" fill="#c18303" glyphName="PLAY" layoutX="521.0" layoutY="41.0"
+                                onMouseClicked="#playFlashcards" size="45" styleClass="playIcon"/>
+        <MaterialDesignIconView id="editIcon" fx:id="icnEdit" fill="#001421" glyphName="PENCIL" layoutX="576.0"
+                                layoutY="34.0" onMouseClicked="#editSet" size="25"/>
+        <MaterialDesignIconView id="deleteIcon" fx:id="icnDelete" fill="#6f0f0f" glyphName="EXCLAMATION" layoutX="605.0"
+                                layoutY="36.0" onMouseClicked="#deleteSet" size="30"/>
+    </children>
 </AnchorPane>

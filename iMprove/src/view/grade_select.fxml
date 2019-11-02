@@ -6,57 +6,71 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="apnGradeRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="533.0" prefWidth="754.0" style="-fx-background-color: #001421; -fx-background-radius: 10;" styleClass="backgroundPane" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.GradeController">
-   <children>
-      <Text fx:id="txtSelectGrade" fill="WHITE" layoutX="-8.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="Select Your Grade, " textAlignment="CENTER" wrappingWidth="753.9999906492885">
-         <font>
-            <Font name="Century Gothic" size="29.0" />
-         </font>
-      </Text>
-      <JFXButton fx:id="btnClose" layoutX="716.0" layoutY="14.0" onAction="#close" style="-fx-background-color: b5b5b5; -fx-background-radius: 15;" text="X" textFill="#001421">
-         <font>
-            <Font name="System Bold" size="11.0" />
-         </font>
-      </JFXButton>
-      <Button fx:id="btnOne" layoutX="63.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="1" textFill="#c18303">
-         <font>
-            <Font name="Comic Sans MS" size="52.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnTwo" layoutX="223.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="2" textFill="#c18303">
-         <font>
-            <Font name="Alba" size="52.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnThree" layoutX="385.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="3" textFill="#c18303">
-         <font>
-            <Font name="BatangChe" size="45.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFour" layoutX="550.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="4" textFill="#c18303">
-         <font>
-            <Font name="Freestyle Script" size="66.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnFive" layoutX="63.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="5" textFill="#c18303">
-         <font>
-            <Font name="28 Days Later" size="63.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSix" layoutX="219.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="6" textFill="#c18303">
-         <font>
-            <Font name="CF Anarchy Regular" size="54.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnSeven" layoutX="381.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="7" textFill="#c18303">
-         <font>
-            <Font name="Ebrima" size="39.0" />
-         </font>
-      </Button>
-      <Button fx:id="btnEight" layoutX="546.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect" prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #c18303;" text="8" textFill="WHITE">
-         <font>
-            <Font name="Gigi" size="65.0" />
-         </font>
-      </Button>
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apnGradeRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="533.0" prefWidth="754.0"
+            style="-fx-background-color: #001421; -fx-background-radius: 10;" styleClass="backgroundPane" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="controller.GradeController">
+    <children>
+        <Text fx:id="txtSelectGrade" fill="WHITE" layoutX="-8.0" layoutY="100.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="titleText1" text="Select Your Grade, " textAlignment="CENTER"
+              wrappingWidth="753.9999906492885">
+            <font>
+                <Font name="Century Gothic" size="29.0"/>
+            </font>
+        </Text>
+        <JFXButton fx:id="btnClose" layoutX="716.0" layoutY="14.0" onAction="#close"
+                   style="-fx-background-color: b5b5b5; -fx-background-radius: 15;" text="X" textFill="#001421">
+            <font>
+                <Font name="System Bold" size="11.0"/>
+            </font>
+        </JFXButton>
+        <Button fx:id="btnOne" layoutX="63.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="1" textFill="#c18303">
+            <font>
+                <Font name="Comic Sans MS" size="52.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnTwo" layoutX="223.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="2" textFill="#c18303">
+            <font>
+                <Font name="Alba" size="52.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnThree" layoutX="385.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="3" textFill="#c18303">
+            <font>
+                <Font name="BatangChe" size="45.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnFour" layoutX="550.0" layoutY="155.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="4" textFill="#c18303">
+            <font>
+                <Font name="Freestyle Script" size="66.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnFive" layoutX="63.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="5" textFill="#c18303">
+            <font>
+                <Font name="28 Days Later" size="63.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnSix" layoutX="219.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="6" textFill="#c18303">
+            <font>
+                <Font name="CF Anarchy Regular" size="54.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnSeven" layoutX="381.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: white;" text="7" textFill="#c18303">
+            <font>
+                <Font name="Ebrima" size="39.0"/>
+            </font>
+        </Button>
+        <Button fx:id="btnEight" layoutX="546.0" layoutY="325.0" mnemonicParsing="false" onAction="#gradeSelect"
+                prefHeight="150.0" prefWidth="150.0" style="-fx-background-color: #c18303;" text="8" textFill="WHITE">
+            <font>
+                <Font name="Gigi" size="65.0"/>
+            </font>
+        </Button>
+    </children>
 </AnchorPane>

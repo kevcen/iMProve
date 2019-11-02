@@ -8,35 +8,45 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<AnchorPane fx:id="apnLoginRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="461.0" prefWidth="907.0" style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginController">
-   <children>
-      <AnchorPane fx:id="apnSignIn" layoutX="521.0" layoutY="23.0" prefHeight="414.0" prefWidth="352.0" style="-fx-background-color: white; -fx-background-radius: 10;">
-         <children>
-            <Label fx:id="lblWelcome" alignment="TOP_CENTER" layoutX="14.0" layoutY="134.0" prefHeight="64.0" prefWidth="369.0" text="Welcome." textAlignment="CENTER" textFill="#001421" wrapText="true">
-               <font>
-                  <Font name="Century Gothic" size="25.0" />
-               </font>
-            </Label>
-            <JFXTextField fx:id="fldName" focusColor="#c18303" layoutX="47.0" layoutY="216.0" onAction="#login" prefHeight="35.0" prefWidth="304.0" promptText="Enter your name here" style="-fx-prompt-text-fill: bfbfbf; -fx-text-fill: #c18303;" unFocusColor="#bfbfbf">
-               <font>
-                  <Font name="Century Gothic" size="15.0" />
-               </font>
-            </JFXTextField>
-            <JFXButton fx:id="btnLogin" layoutX="47.0" layoutY="291.0" onAction="#login" prefHeight="35.0" prefWidth="304.0" style="-fx-background-color: #c18303; -fx-background-radius: 8;" text="LOGIN" textFill="WHITE" visible="false">
-               <font>
-                  <Font name="Century Gothic" size="16.0" />
-               </font>
-            </JFXButton>
-         </children>
-      </AnchorPane>
-      <AnchorPane fx:id="apnBanner" prefHeight="460.0" prefWidth="514.0" style="-fx-background-radius: 15;">
-         <children>
-            <ImageView fx:id="imgvBanner" fitHeight="461.0" fitWidth="531.0" layoutX="3.0" pickOnBounds="true" preserveRatio="true" style="-fx-background-radius: 15;">
-               <image>
-                  <Image url="@../resources/img/iMProve%20banner.png" />
-               </image>
-            </ImageView>
-         </children>
-      </AnchorPane>
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apnLoginRoot" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="461.0" prefWidth="907.0"
+            style="-fx-background-color: transparent;" xmlns="http://javafx.com/javafx/8.0.171"
+            fx:controller="controller.LoginController">
+    <children>
+        <AnchorPane fx:id="apnSignIn" layoutX="521.0" layoutY="23.0" prefHeight="414.0" prefWidth="352.0"
+                    style="-fx-background-color: white; -fx-background-radius: 10;">
+            <children>
+                <Label fx:id="lblWelcome" alignment="TOP_CENTER" layoutX="14.0" layoutY="134.0" prefHeight="64.0"
+                       prefWidth="369.0" text="Welcome." textAlignment="CENTER" textFill="#001421" wrapText="true">
+                    <font>
+                        <Font name="Century Gothic" size="25.0"/>
+                    </font>
+                </Label>
+                <JFXTextField fx:id="fldName" focusColor="#c18303" layoutX="47.0" layoutY="216.0" onAction="#login"
+                              prefHeight="35.0" prefWidth="304.0" promptText="Enter your name here"
+                              style="-fx-prompt-text-fill: bfbfbf; -fx-text-fill: #c18303;" unFocusColor="#bfbfbf">
+                    <font>
+                        <Font name="Century Gothic" size="15.0"/>
+                    </font>
+                </JFXTextField>
+                <JFXButton fx:id="btnLogin" layoutX="47.0" layoutY="291.0" onAction="#login" prefHeight="35.0"
+                           prefWidth="304.0" style="-fx-background-color: #c18303; -fx-background-radius: 8;"
+                           text="LOGIN" textFill="WHITE" visible="false">
+                    <font>
+                        <Font name="Century Gothic" size="16.0"/>
+                    </font>
+                </JFXButton>
+            </children>
+        </AnchorPane>
+        <AnchorPane fx:id="apnBanner" prefHeight="460.0" prefWidth="514.0" style="-fx-background-radius: 15;">
+            <children>
+                <ImageView fx:id="imgvBanner" fitHeight="461.0" fitWidth="531.0" layoutX="3.0" pickOnBounds="true"
+                           preserveRatio="true" style="-fx-background-radius: 15;">
+                    <image>
+                        <Image url="@../resources/img/iMProve%20banner.png"/>
+                    </image>
+                </ImageView>
+            </children>
+        </AnchorPane>
+    </children>
 </AnchorPane>

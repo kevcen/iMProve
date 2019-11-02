@@ -1,85 +1,94 @@
 /*General Styles */
 .backgroundPane1 {
-	-fx-background-image: url("/resources/img/panda-background2.png");
-	-fx-background-repeat: stretch;   
-   -fx-background-position: center center;
-	-fx-background-radius: 10;
+    -fx-background-image: url("/resources/img/panda-background2.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-radius: 10;
 }
 
 .backgroundPane2 {
-	-fx-background-color: white;
-	-fx-background-radius: 10;
+    -fx-background-color: white;
+    -fx-background-radius: 10;
 }
 
 .titleText1 {
-	-fx-fill: white;
+    -fx-fill: white;
 }
 
 .titleText2 {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
+
 .questionText {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
+
 .titleText3 {
-	-fx-fill: #b5b5b5;
+    -fx-fill: #b5b5b5;
 }
+
 .subtitleText1 {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
-.subtitleText2{
-	-fx-fill: #3d3d3d;
+
+.subtitleText2 {
+    -fx-fill: #3d3d3d;
 }
+
 .questionText {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
+
 .specialButton1 {
-	-fx-background-image: url("/resources/img/panda-background1.png");
-	-fx-background-repeat: stretch;
-	-fx-background-position: center center;
-	-jfx-button-type: RAISED;
-	-fx-text-fill: white;
-	-fx-background-radius: 20;
+    -fx-background-image: url("/resources/img/panda-background1.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -jfx-button-type: RAISED;
+    -fx-text-fill: white;
+    -fx-background-radius: 20;
 }
 
 .specialButton2 {
-	-fx-background-color: white;
-	-fx-text-fill: #3d3d3d;
-	-fx-background-radius: 20;
+    -fx-background-color: white;
+    -fx-text-fill: #3d3d3d;
+    -fx-background-radius: 20;
 }
 
 .selectButton {
-	-fx-background-image: url("/resources/img/panda-background1.png");
-	-fx-background-repeat: stretch;
-	-fx-background-position: center center;
-	-fx-background-radius: 10;
-	-fx-text-fill: white;
-	-jfx-button-type: RAISED;
+    -fx-background-image: url("/resources/img/panda-background1.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
+    -fx-background-radius: 10;
+    -fx-text-fill: white;
+    -jfx-button-type: RAISED;
 }
 
 /*Scroll Pane Code*/
 
 /*scroll bar track */
-.scroll-bar:vertical > .track-background{
+.scroll-bar:vertical > .track-background {
     -fx-background-color: #FFFFFF;
     -fx-background-insets: 0.0;
 }
-.scroll-bar:horizontal > .track-background{
+
+.scroll-bar:horizontal > .track-background {
     -fx-background-color: #FFFFFF;
     -fx-background-insets: 0.0;
 }
+
 /*dragging thumb */
 .scroll-bar:vertical > .thumb {
     -fx-background-image: url("/resources/img/panda-background1.png");
-    -fx-background-repeat: stretch;   
-   -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
     -fx-background-insets: 0.0;
     -fx-background-radius: 1.0;
 }
+
 .scroll-bar:horizontal > .thumb {
     -fx-background-image: url("/resources/img/panda-background1.png");
-    -fx-background-repeat: stretch;   
-   -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
     -fx-background-insets: 0.0;
     -fx-background-radius: 1.0;
 }
@@ -108,7 +117,8 @@
 .scroll-bar:vertical > .decrement-button > .decrement-arrow {
     -fx-shape: "M298 598l214-214 214 214h-428z";
 }
-/* right arrow shape*/    
+
+/* right arrow shape*/
 .scroll-bar:horizontal > .increment-button > .increment-arrow {
     -fx-shape: "M0 428l0 -428l214 214l-214 214z";
 }
@@ -117,86 +127,93 @@
 .scroll-bar:horizontal > .decrement-button > .decrement-arrow {
     -fx-shape: "M214 0l0 428l-214 -214l214 -214z";
 }
+
 /*scroll pane itself */
 .scroll-pane {
-	-fx-background-color: transparent;
+    -fx-background-color: transparent;
     -fx-background-insets: 0;
     -fx-padding: 0;
 }
+
 .scroll-pane:focused {
     -fx-background-insets: 0;
 }
+
 .scroll-pane .corner {
     -fx-background-insets: 0;
 }
+
 .scroll-pane > .viewport {
     -fx-background-color: transparent;
 }
 
 /*Root Styling */
 #navigationBar {
-	-fx-background-image: url("/resources/img/panda-background1.png");
-	-fx-background-repeat: stretch;
-	-fx-background-position: center center;
+    -fx-background-image: url("/resources/img/panda-background1.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
 }
 
 .activityButton {
-	-fx-text-fill: #3d3d3d;
+    -fx-text-fill: #3d3d3d;
 }
+
 .activityIcon {
-	-fx-fill: #e8e8e8;
+    -fx-fill: #e8e8e8;
 }
+
 .activityPane {
-	-fx-background-color: transparent;
+    -fx-background-color: transparent;
 }
 
 #settingsIcon {
-	-fx-fill: white;
+    -fx-fill: white;
 }
 
 /*Learn Section */
 .navigateButton {
-	-fx-background-color: white;
-	-fx-text-fill: #3d3d3d;
-	-fx-background-radius: 40;
+    -fx-background-color: white;
+    -fx-text-fill: #3d3d3d;
+    -fx-background-radius: 40;
 }
 
 #flashcardPane {
-	-fx-background-image: url("/resources/img/panda-background1.png");
-	-fx-background-repeat: stretch;
-	-fx-background-position: center center;
+    -fx-background-image: url("/resources/img/panda-background1.png");
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
 }
 
 #termText {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
 
 #defText {
-	-fx-fill: #595959;
+    -fx-fill: #595959;
 }
 
 #backIcon {
-	-fx-fill: white;
+    -fx-fill: white;
 }
 
 .playIcon {
-	-fx-fill: #bababa;
+    -fx-fill: #bababa;
 }
+
 #playButton {
-	-fx-background-radius: 50;
+    -fx-background-radius: 50;
 }
 
 #editIcon {
-	-fx-fill: #3d3d3d;
+    -fx-fill: #3d3d3d;
 }
 
 #deleteIcon {
-	-fx-fill: #6f0f0f;
+    -fx-fill: #6f0f0f;
 }
 
 #addButton {
-	-fx-background-color: #3d3d3d;
-	-fx-background-radius: 5;
+    -fx-background-color: #3d3d3d;
+    -fx-background-radius: 5;
 }
 
 /*Listen Section */
@@ -221,12 +238,14 @@
 /*Test Section */
 #testProgressbar > .bar {
     -fx-background-image: url("/resources/img/panda-background1.png");
-    -fx-background-repeat: stretch;   
-   -fx-background-position: center center;
+    -fx-background-repeat: stretch;
+    -fx-background-position: center center;
 }
+
 #testProgressbar > .track {
-	-fx-background-color: white;
+    -fx-background-color: white;
 }
+
 /*Review Section */
 #graphTabpane .tab-header-area .tab-selected-line {
     -fx-background-color: #3d3d3d;
@@ -237,74 +256,89 @@
 }
 
 #graphTabpane .tab-label {
-	-fx-text-fill: #3d3d3d;
-	-fx-font-family: 'Century Gothic';
+    -fx-text-fill: #3d3d3d;
+    -fx-font-family: 'Century Gothic';
 }
+
 /*Chart code */
 .chart-title {
     -fx-text-fill: #b5b5b5;
     -fx-font-size: 22px;
     -fx-font-family: 'Century Gothic';
 }
+
 .axis-label {
     -fx-text-fill: #3d3d3d;
     -fx-font-family: 'Century Gothic';
     -fx-font-size: 16px;
 }
+
 .axis {
-	-fx-text-fill: #3d3d3d;
-	-fx-font-family: 'Century Gothic';
-	-fx-font-size: 12px;
+    -fx-text-fill: #3d3d3d;
+    -fx-font-family: 'Century Gothic';
+    -fx-font-size: 12px;
 }
+
 .chart {
     -fx-padding: 20px;
 }
+
 .chart-plot-background {
     -fx-background-color: transparent;
 }
+
 .chart-alternative-row-fill {
     -fx-fill: transparent;
     -fx-stroke: transparent;
     -fx-stroke-width: 0;
 }
-.chart-series-line {    
+
+.chart-series-line {
     -fx-stroke-width: 2px;
     -fx-effect: null;
 }
+
 .chart-line-symbol {
     -fx-background-color: #b5b5b5;
     -fx-background-radius: 5px;
     -fx-padding: 3px;
 }
-.default-color0.chart-line-symbol { 
-	-fx-background-color: #b5b5b5;
+
+.default-color0.chart-line-symbol {
+    -fx-background-color: #b5b5b5;
 }
-.default-color0.chart-series-line { -fx-stroke: #b5b5b5; }
+
+.default-color0.chart-series-line {
+    -fx-stroke: #b5b5b5;
+}
 
 
 /*Settings Section */
 .settingsCbox .list-cell {
-     -fx-text-fill: #3d3d3d;
+    -fx-text-fill: #3d3d3d;
 }
+
 .settingsCBox {
-	-fx-text-fill: #3d3d3d;
-	-jfx-focus-color: #3d3d3d;
-	-jfx-unfocus-color: #b5b5b5;
+    -fx-text-fill: #3d3d3d;
+    -jfx-focus-color: #3d3d3d;
+    -jfx-unfocus-color: #b5b5b5;
 }
 
 #titleLine {
-	-fx-stroke: #3d3d3d;
+    -fx-stroke: #3d3d3d;
 }
+
 .jfx-toggle-button {
-     -jfx-toggle-color: #3d3d3d;
-     -jfx-untoggle-color: #FAFAFA;
-     -jfx-toggle-line-color: #3d3d3d;
-     -jfx-untoggle-line-color: #999999;
-     -jfx-size: 12.0;
-     -jfx-disable-visual-focus: false;
+    -jfx-toggle-color: #3d3d3d;
+    -jfx-untoggle-color: #FAFAFA;
+    -jfx-toggle-line-color: #3d3d3d;
+    -jfx-untoggle-line-color: #999999;
+    -jfx-size: 12.0;
+    -jfx-disable-visual-focus: false;
 }
+
 #nameField {
-	-fx-text-fill: #3d3d3d;
-	-jfx-focus-color: white;
-	-jfx-unfocus-color: #b5b5b5;
+    -fx-text-fill: #3d3d3d;
+    -jfx-focus-color: white;
+    -jfx-unfocus-color: #b5b5b5;
 }

@@ -7,43 +7,56 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane fx:id="apnFlashcards" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LearnFlashcardController">
-   <children>
-      <Text fx:id="txtSetTitle" fill="WHITE" layoutX="-1.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0" styleClass="titleText1" text="~ Title ~" textAlignment="CENTER" wrappingWidth="776.0">
-         <font>
-            <Font name="Bradley Hand ITC" size="31.0" />
-         </font>
-      </Text>
-      <AnchorPane fx:id="apnShadow" layoutX="165.0" layoutY="165.0" prefHeight="252.0" prefWidth="456.0" style="-fx-background-color: grey;" />
-      <StackPane id="flashcardPane" fx:id="spnFlashcard" layoutX="159.0" layoutY="159.0" onMouseClicked="#flipCard" prefHeight="252.0" prefWidth="456.0">
-         <children>
-            <Text id="termText" fx:id="txtTerm" fill="#001421" strokeType="OUTSIDE" strokeWidth="0.0" text="Foreign Term" textAlignment="CENTER" wrappingWidth="439.265625" StackPane.alignment="CENTER">
-               <font>
-                  <Font name="Century Gothic" size="32.0" />
-               </font>
-            </Text>
-            <Text id="defText" fx:id="txtDef" fill="#c18303" layoutX="167.0" layoutY="145.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Definition" textAlignment="CENTER" visible="false" wrappingWidth="439.0" StackPane.alignment="CENTER">
-               <font>
-                  <Font name="Century Gothic" size="32.0" />
-               </font>
-            </Text>
-         </children>
-      </StackPane>
-      <JFXButton fx:id="btnRight" layoutX="681.0" layoutY="270.0" onAction="#moveCard" prefHeight="35.0" prefWidth="36.0" styleClass="navigateButton" text="&gt;" textFill="#c18303">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="btnLeft" layoutX="60.0" layoutY="272.0" onAction="#moveCard" prefHeight="30.0" prefWidth="30.0" styleClass="navigateButton" text="&lt;" textFill="#c18303">
-         <font>
-            <Font name="System Bold" size="19.0" />
-         </font>
-      </JFXButton>
-      <JFXButton fx:id="btnFlip" layoutX="347.0" layoutY="497.0" onMouseClicked="#flipCard" prefHeight="39.0" prefWidth="90.0" styleClass="specialButton1" text="Flip it" textFill="WHITE">
-         <font>
-            <Font name="Century Gothic" size="18.0" />
-         </font>
-      </JFXButton>
-      <MaterialDesignIconView id="backIcon" fx:id="icnBack" fill="#fffffff4" glyphName="ARROW_LEFT" layoutX="6.0" layoutY="28.0" onMouseClicked="#goBack" size="25" />
-   </children>
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:id="apnFlashcards" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity"
+            minWidth="-Infinity" prefHeight="632.0" prefWidth="776.0" styleClass="backgroundPane1"
+            xmlns="http://javafx.com/javafx/8.0.171" fx:controller="controller.LearnFlashcardController">
+    <children>
+        <Text fx:id="txtSetTitle" fill="WHITE" layoutX="-1.0" layoutY="26.0" strokeType="OUTSIDE" strokeWidth="0.0"
+              styleClass="titleText1" text="~ Title ~" textAlignment="CENTER" wrappingWidth="776.0">
+            <font>
+                <Font name="Bradley Hand ITC" size="31.0"/>
+            </font>
+        </Text>
+        <AnchorPane fx:id="apnShadow" layoutX="165.0" layoutY="165.0" prefHeight="252.0" prefWidth="456.0"
+                    style="-fx-background-color: grey;"/>
+        <StackPane id="flashcardPane" fx:id="spnFlashcard" layoutX="159.0" layoutY="159.0" onMouseClicked="#flipCard"
+                   prefHeight="252.0" prefWidth="456.0">
+            <children>
+                <Text id="termText" fx:id="txtTerm" fill="#001421" strokeType="OUTSIDE" strokeWidth="0.0"
+                      text="Foreign Term" textAlignment="CENTER" wrappingWidth="439.265625"
+                      StackPane.alignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic" size="32.0"/>
+                    </font>
+                </Text>
+                <Text id="defText" fx:id="txtDef" fill="#c18303" layoutX="167.0" layoutY="145.0" strokeType="OUTSIDE"
+                      strokeWidth="0.0" text="Definition" textAlignment="CENTER" visible="false" wrappingWidth="439.0"
+                      StackPane.alignment="CENTER">
+                    <font>
+                        <Font name="Century Gothic" size="32.0"/>
+                    </font>
+                </Text>
+            </children>
+        </StackPane>
+        <JFXButton fx:id="btnRight" layoutX="681.0" layoutY="270.0" onAction="#moveCard" prefHeight="35.0"
+                   prefWidth="36.0" styleClass="navigateButton" text="&gt;" textFill="#c18303">
+            <font>
+                <Font name="System Bold" size="19.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnLeft" layoutX="60.0" layoutY="272.0" onAction="#moveCard" prefHeight="30.0"
+                   prefWidth="30.0" styleClass="navigateButton" text="&lt;" textFill="#c18303">
+            <font>
+                <Font name="System Bold" size="19.0"/>
+            </font>
+        </JFXButton>
+        <JFXButton fx:id="btnFlip" layoutX="347.0" layoutY="497.0" onMouseClicked="#flipCard" prefHeight="39.0"
+                   prefWidth="90.0" styleClass="specialButton1" text="Flip it" textFill="WHITE">
+            <font>
+                <Font name="Century Gothic" size="18.0"/>
+            </font>
+        </JFXButton>
+        <MaterialDesignIconView id="backIcon" fx:id="icnBack" fill="#fffffff4" glyphName="ARROW_LEFT" layoutX="6.0"
+                                layoutY="28.0" onMouseClicked="#goBack" size="25"/>
+    </children>
 </AnchorPane>
